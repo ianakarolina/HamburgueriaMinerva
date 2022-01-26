@@ -1,13 +1,20 @@
 import React from 'react';
-import {FaUserCircle, FaShoppingCart, FaBars} from "react-icons/fa";
-import {Head, HeaderName, HeaderMenu, HeaderCarrinho, HeaderButton, MenuItem, ProdutosAdicionados} from "./styles"
-import {Quantity} from "../Products/ProductsElements"
-
+import {FaUserCircle, FaBars} from "react-icons/fa";
+import {
+        Head, 
+        HeaderName,
+        HeaderMenu, 
+        HeaderCarrinho, 
+        HeaderButton,
+        MenuItem, 
+        ProdutosAdicionados,    
+    } from "./styles"
+import {Quantity, ProductButton} from "../Products/ProductsElements"
 
 
 function Header() {
     const itensMenu =[
-        {nome: "Entre ou cadastre-se", icone:<FaUserCircle/>},
+        {nome: "Login", icone:<FaUserCircle/>},
         {nome: "Contatos", icone:""}
     ]
 
@@ -20,12 +27,13 @@ function Header() {
 
     return (
     <Head>
-        <HeaderName>HAMBURGUERIA</HeaderName>
+        <HeaderName>MINERVA</HeaderName>
         <HeaderMenu>{renderList}</HeaderMenu>
-        <ProdutosAdicionados>
+        {/* <ProdutosAdicionados>
             <HeaderCarrinho><FaShoppingCart/></HeaderCarrinho>
-        </ProdutosAdicionados>
-        
+            <Quantity>
+            </Quantity>
+        </ProdutosAdicionados> */}
         <HeaderButton><FaBars/></HeaderButton>
     </Head>
     );

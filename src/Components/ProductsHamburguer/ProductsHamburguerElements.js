@@ -2,9 +2,7 @@ import styled from "styled-components";
 
 export const ProductsContainer = styled.div`
     width: 100vw;
-    min-height: 100vh;
-    padding-left:5rem;
-    padding-right: 5rem;
+    min-height: 60vh;
     background: white;
     color: black;
 `;
@@ -66,13 +64,15 @@ export const ProductButton = styled.button`
     font-size: 1rem;
     padding: 1rem 4rem;
     border: none;
-    background: rgb(159,38,17);
+    background: rgb(179,123,86);
     color: #fff;
     cursor: pointer;
     transition: 0.2 ease-out;
     &:hover{
-        background: rgb(255,214,82);
+        background: rgb(223,157,60);
         transition: 0.2s ease-out;
         color: #000;
     }
+    font-family: 'Montserrat', sans-serif;
 `;
+

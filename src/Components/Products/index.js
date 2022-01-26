@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
     ProductsContainer,
     ProductsWrapper,
@@ -14,13 +14,22 @@ import {
     ProductButton
 } from './ProductsElements'
 
+import Cart from "../../Components/Cart"
+
 const Products = ({ heading, data }) => {
    
     const [quantity, setQuantity] = useState(0);
+    const [actualItem, setActualItem] = useState({})
 
     function Increment (){
-        setQuantity = (quantity + 1)
+        setQuantity(quantity + 1);
     }
+
+    useEffect(()=>{
+        setActualItem({
+            quantidade:quantity
+        })
+    }, [quantity])
 
     return (
         <ProductsContainer>
@@ -35,7 +44,6 @@ const Products = ({ heading, data }) => {
                                     <ProductDesc>{product.desc}</ProductDesc>
                                     <ProductPrice>{product.price}</ProductPrice>
                                     <QuantityInput>
-                                        <Quantity>{quantity}</Quantity>
                                         <ProductButton onClick={Increment}>{product.button}</ProductButton>
                                     </QuantityInput>
                                 </ProductInfo>
@@ -43,9 +51,8 @@ const Products = ({ heading, data }) => {
                         )
                 })}
             </ProductsWrapper>
-
+            <Cart item={actualItem}/>
         </ProductsContainer>
-        
     );
 };
 

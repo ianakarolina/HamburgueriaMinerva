@@ -37,7 +37,7 @@ export const Icone = styled.a` /*Icone de lupa*/
     display: flex;
     justify-content: center;
     align-items: center;
-    color:rgb(159,38,17);
+    color:rgb(179,123,86);
     cursor: pointer;
 
 `;

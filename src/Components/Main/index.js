@@ -37,9 +37,7 @@ export default function Main() {
         <ContainerBebidas>
           <ProductsBebidas heading='Bebidas' data={productBebidasData}/>
         </ContainerBebidas>
-      </ContainerProdutos>
-      
-      
+      </ContainerProdutos>     
     </Container>
   );
 }

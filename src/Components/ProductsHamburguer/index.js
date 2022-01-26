@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState} from 'react';
 import {
     ProductsContainer,
     ProductsWrapper,
@@ -12,7 +12,9 @@ import {
     ProductButton
 } from './ProductsHamburguerElements'
 
+
 const ProductsHamburguer = ({ heading, data }) => {
+
   return (
   <ProductsContainer>
       <ProductsHeading>{heading}</ProductsHeading>
@@ -31,8 +33,6 @@ const ProductsHamburguer = ({ heading, data }) => {
                 )
           })}
       </ProductsWrapper>
-
-
   </ProductsContainer>
   
   );
