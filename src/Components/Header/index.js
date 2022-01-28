@@ -1,19 +1,10 @@
 import React from 'react';
-import {FaUserCircle, FaBars, FaShoppingCart} from "react-icons/fa";
+import {FaUserCircle, FaBars} from "react-icons/fa";
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import {
         Head, 
         HeaderName,
         HeaderMenu, 
-        HeaderCarrinho, 
-        HeaderButton,
-        MenuItem, 
-        ProdutosAdicionados,
-        HeaderLinks,
-        HeaderLogin,
-        HeaderContato,
-        ActualItem, 
-        Item   
 } from "./styles"
 import Login from "../../pages/Login"
 

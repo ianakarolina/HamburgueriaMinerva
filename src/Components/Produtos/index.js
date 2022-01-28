@@ -25,7 +25,6 @@ import product9 from "../../images/Fanta.png"
 
 import {FaShoppingCart} from "react-icons/fa"
 
-import Cart from "../../Components/Cart"
 
 export default function Produtos({ heading, data }) {
 
