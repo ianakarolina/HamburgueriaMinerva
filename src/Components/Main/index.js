@@ -7,16 +7,11 @@ import {Container,
         Icone,  
         ContainerHamburguer,
         ContainerBebidas, 
-      } from "./styles"
+} from "./styles"
 
-import Products from "../Products";
-import ProductsHamburguer from "../ProductsHamburguer";
-import ProductsBebidas from "../ProductsBebidas";
-import { productData } from '../Products/data';
-import { productHamburguerData } from '../ProductsHamburguer/data'
-import { productBebidasData } from '../ProductsBebidas/data'
 
 import {FaSearch} from "react-icons/fa"
+import Produtos from "../Produtos"
 
 export default function Main() {
 
@@ -27,8 +22,8 @@ export default function Main() {
         <Input placeholder="Busque por um produto"/>
         <Icone><FaSearch/></Icone>
       </BarraBusca>
-      <ContainerProdutos>
-        <ContainerPromo>
+      <Produtos />
+        {/* <ContainerPromo>
           <Products heading='Promoções' data={productData}/>
         </ContainerPromo>
         <ContainerHamburguer>
@@ -36,8 +31,7 @@ export default function Main() {
         </ContainerHamburguer>
         <ContainerBebidas>
           <ProductsBebidas heading='Bebidas' data={productBebidasData}/>
-        </ContainerBebidas>
-      </ContainerProdutos>     
+        </ContainerBebidas> */}
     </Container>
   );
 }

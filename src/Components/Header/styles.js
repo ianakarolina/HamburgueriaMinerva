@@ -1,21 +1,20 @@
 import styled from "styled-components";
 
-export const MenuItem = styled.h4` /*Opções do navbar - entre ou cadastre-se*/
-    height: 5vh;
-    width: 5vw;
-    cursor:pointer;
-    display: flex;
-    &:hover{
-        color:#E1E1E1 ;
-    }
-    margin-right: 15px;
-`;
+// export const MenuItem = styled.h4` /*Opções do navbar - entre ou cadastre-se*/
+//     height: 5vh;
+//     width: 5vw;
+//     cursor:pointer;
+//     display: flex;
+//     &:hover{
+//         color:#E1E1E1 ;
+//     }
+//     margin-right: 15px;
+// `;
 
 export const Head = styled.header`  /*o próprio header*/
     background-color: rgb(179,123,86);
     display: flex;
-    padding-top: 4%;
-    padding-bottom: 4%;
+    padding: 50px 50px;
     justify-content: space-between;
     position:relative;
 `;
@@ -33,34 +32,42 @@ export const HeaderMenu = styled.ul` /*menu - entre ou cadastre-se*/
     font-weight: bold;
     color: rgb(73,22,3);
     align-items: center;
-    position: absolute;
-    right: 12%;
-    top:50%;
+    justify-content: center;
+    cursor: pointer;
+    
+    li{
+        font-size: 18px;
+        margin-right: 20px;
+        &:hover{
+            color:white;
+        }
+    }
+    i{
+        font-size: 1.5rem;
+        &:hover{
+            color:white;
+        }
+    }
+
+    a{
+        text-decoration: none;
+        color:rgb(73,22,3);
+        transition: filter .2s;
+    }
+
+    a:hover{
+        color:white;
+    }
 `;
 
-// export const ProdutosAdicionados = styled.div`
-//     background-color: rgb(73,22,3);
-//     width: 5vw;
-//     height: 5vh;
-//     position: absolute;
-//     right: 6%;
-//     top:50%;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     border-radius: 5px;
-// `;
-
-// export const HeaderCarrinho = styled.i` /*ícone do carrinho*/
-//     cursor: pointer;
-//     &:hover{
-//         color:#E1E1E1;
-//     }
-//     font-size:1.5rem;
-//     display: flex;
-//     color: white;
-//     margin-left: 5px;
-// `;
+export const HeaderLinks = styled.div`
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+`;
 
 export const HeaderButton = styled.i`
     cursor: pointer;
@@ -75,5 +82,34 @@ export const HeaderButton = styled.i`
     color: rgb(73,22,3);
 `;
 
+export const ActualItem = styled.div`
+    background-color: rgb(73,22,3);
+    width: 5vw;
+    height: 5vh;
+    position: absolute;
+    right: 6%;
+    top:-10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 5px;
+    color: white;
+`;
 
+export const HeaderCarrinho = styled.i`
+    cursor: pointer;
+    &:hover{
+        color:#E1E1E1;
+    }
+    font-size:1.5rem;
+    display: flex;
+    color: white;
+    margin-left: 5px;
+    align-items: center;
+`;
+
+export const Item = styled.p`
+    font-size: 1rem;
+    margin-left: 4px;
+`;
 

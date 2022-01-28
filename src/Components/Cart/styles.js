@@ -21,7 +21,6 @@ export const HeaderCarrinho = styled.i`
     font-size:1.5rem;
     display: flex;
     color: white;
-    margin-left: 5px;
     align-items: center;
 `;
 

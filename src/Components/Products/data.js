@@ -3,6 +3,7 @@ import product2 from "../../images/GranBurger.jpeg"
 import product3 from "../../images/ChickenBbq.jpeg"
 
 export const productData = [
+
     {
         img: product1,
         name: 'Lingui Burguer',
@@ -24,4 +25,5 @@ export const productData = [
         price: "R$34,90",
         button: "Adicionar"
     }
+
 ]

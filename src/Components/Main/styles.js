@@ -5,7 +5,8 @@ export const Container = styled.div`   /*DIV PRINCIPAL*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position:relative;
+    height: 100%;
+    width: 100%;
 `;
 
 export const BarraBusca = styled.div` /*Ao redor da barra de busca*/
@@ -17,8 +18,8 @@ export const BarraBusca = styled.div` /*Ao redor da barra de busca*/
     width: 14rem;
     padding: 10px;
     border-radius: 10px;
-    position: absolute;
-    top: 2rem;
+    margin-top: 20px;
+    box-shadow: 0 2px 15px 0 rgba(136, 136, 136, 0.77);
 `;
 
 export const Input = styled.input`  /*Barra de busca*/
@@ -45,26 +46,25 @@ export const Icone = styled.a` /*Icone de lupa*/
 export const ContainerProdutos = styled.div`
     display: flex;
     flex-direction: column;
-    position: relative;
-    top:6rem;
-`;
-
-export const ContainerPromo = styled.div` /*DIV DE PROMOCOES*/
     align-items: center;
-    justify-content: center;
 `;
 
-
-export const ContainerHamburguer = styled.div` /* DIV DE HAMBURGUERES */
-    display: flex;
-    flex-direction: column;
-    font-size: 1.4rem;
-    font-weight: bolder;
-`;
+// export const ContainerPromo = styled.div` /*DIV DE PROMOCOES*/
+//     align-items: center;
+//     justify-content: center;
+// `;
 
 
-export const ContainerBebidas= styled.div` /* DIV DE BEBIDAS */
-    font-size: 1.4rem;
-    font-weight: bolder;
-    display:grid;
-`;
+// export const ContainerHamburguer = styled.div` /* DIV DE HAMBURGUERES */
+//     display: flex;
+//     flex-direction: column;
+//     font-size: 1.4rem;
+//     font-weight: bolder;
+// `;
+
+
+// export const ContainerBebidas= styled.div` /* DIV DE BEBIDAS */
+//     font-size: 1.4rem;
+//     font-weight: bolder;
+//     display:grid;
+// `;
